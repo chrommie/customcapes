@@ -1,16 +1,17 @@
 # Custom Capes
 *This is a very basic, version 1 prototype. Gonna be adding more stuff later.* 
-
 <details>
   <summary><strong>Table of contents</strong></summary>
-- [Credit](#credit)
+
 - [Installation](#installation)
 - [Capes](#capes)
 - [How it works](#how-it-works)
 - [Contact](#contact)
 
 </details>
-# Credit
+<br><br> 
+
+**Credit**<br>
 I found the default minecraft capes all over the place, but most come from: `https://github.com/ewanhowell5195/customOptiFineCapeServer/tree/main/capes/default`
 
 # Installation
