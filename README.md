@@ -16,6 +16,7 @@ I found the default minecraft capes all over the place, but most come from: `htt
 
 # Installation
 
+## Windows
 
 **Must be using a version of Minecraft with Optifine on Windows**<br><br>
 Download or Clone Repository<br><br>
@@ -28,7 +29,39 @@ In the /capes folder, rename a cape to (Your Minecraft Username).png<br>
 
 <br>*Must be run as administrator, as it modifies files in sys32*
 
+
+## GNU/Linux
+
+We will be using a debian-based distro, here Ubuntu (20.04 LTS).
+<br><br>
+You will need to have installed either Optifine from [optifine.net](https://optifine.net/home) either Forge with Optifine in the mods folder.
 <br>
+Download required packages from apt:
+- `sudo apt-get -y install python3-pip authbind`
+- (optional: `sudo apt-get -y install git`)
+
+Download or clone the repo (eg.: `git clone https://github.com/3060ti/customcapes.git && cd customcapes`).
+<br><br>
+Add `~/.local/bin` to PATH:
+- `export PATH="$HOME/.local/bin:$PATH"`
+
+Install Flask:
+- `pip3 install Flask`
+
+Change the owner of the hosts file to the desired user (**replace *YOURUSER* with the local user, eg.: *sabinm***):
+- `sudo chown YOURUSER /etc/hosts`
+- `sudo cp /etc/hosts /etc/hosts.bak` (make a backup, just in case)
+
+Allow users other than *root* to bind to port 80:
+- `sudo touch /etc/authbind/byport/80`
+- `sudo chmod 777 /etc/authbind/byport/80`
+
+Reopen the terminal, go to the directory you cloned/downloaded to and run:
+- `cd customcapes` (replace with the directory you cloned/downloaded to)
+- `python3 ccapes_linux.py`
+
+Open Minecraft with Optifine/Forge with Optifine, join a server and voilà!
+
 
 # Capes
 
@@ -37,6 +70,7 @@ Capes must be stored in the /capes folder
 Any custom capes must use the elytra texture
 <br>
 Anytime you change the cape while the program is running: `Settings -> Skin Customization -> Optifine Cape -> Reload Cape`
+
 
 # How It Works
 
