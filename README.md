@@ -58,7 +58,7 @@ Allow users other than *root* to bind to port 80:
 
 Reopen the terminal, go to the directory you cloned/downloaded to and run:
 - `cd customcapes` (replace with the directory you cloned/downloaded to)
-- `python3 ccapes_linux.py`
+- `authbind --deep python3 ccapes.py`
 
 Open Minecraft with Optifine/Forge with Optifine, join a server and voilà!
 
